@@ -26,7 +26,7 @@ module.exports = function DeviceColumnService($filter, gettext, SettingsService,
   // Definitions for all possible values.
   return {
     state: DeviceStatusCell({
-      title: gettext('Status')
+      title: gettext('Status!!!')
     , value: function(device) {
         return $filter('translate')(device.enhancedStateAction)
       }

@@ -159,6 +159,10 @@ module.exports = function DeviceListCtrl(
       name: 'groupOrigin'
     , selected: false
     }
+  , {
+      name: 'customField'
+    , selected: false
+    }
   ]
 
   $scope.columns = defaultColumns

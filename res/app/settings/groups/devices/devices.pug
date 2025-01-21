@@ -5,7 +5,7 @@
 li.list-group-item.groups-list
   .heading.group-action-body
     i.fa.fa-mobile
-    span(translate) Devices 
+    span(translate) Devices
 
   .row
     .panel-group
@@ -16,7 +16,7 @@ li.list-group-item.groups-list
             ng-click='showGroupDevices = !showGroupDevices'
             ng-class='{"btn-primary-outline": showGroupDevices, "btn-primary": !showGroupDevices}')
               i.fa.fa-mobile
-              span(translate) Group devices 
+              span(translate) Group devices
 
         .panel-body(ng-show='!showGroupDevices')
           nothing-to-show(
@@ -95,6 +95,7 @@ li.list-group-item.groups-list
                     td(ng-if='groupDeviceData.columns[12].selected') {{device.phone.imei}}
                     td(ng-if='groupDeviceData.columns[13].selected') {{device.provider.name}}
                     td(ng-if='groupDeviceData.columns[14].selected') {{device.group.originName}}
+                    td(ng-if='groupDeviceData.columns[15].selected') {{device.customField}}
 
       .panel.panel-default
         .panel-heading.text-center
@@ -103,7 +104,7 @@ li.list-group-item.groups-list
             ng-click='showAvailableDevices = !showAvailableDevices'
             ng-class='{"btn-primary-outline": !showAvailableDevices, "btn-primary": showAvailableDevices}')
               i.fa.fa-mobile
-              span(translate) Available devices 
+              span(translate) Available devices
 
         .panel-body(ng-show='showAvailableDevices')
           nothing-to-show(
@@ -195,3 +196,4 @@ li.list-group-item.groups-list
                     td(ng-if='deviceData.columns[12].selected') {{device.phone.imei}}
                     td(ng-if='deviceData.columns[13].selected') {{device.provider.name}}
                     td(ng-if='deviceData.columns[14].selected') {{device.group.originName}}
+                    td(ng-if='deviceData.columns[15].selected') {{device.customField}}

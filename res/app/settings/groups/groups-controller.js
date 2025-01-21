@@ -35,6 +35,7 @@ module.exports = function GroupsCtrl(
     'manufacturer,' +
     'sdk,' +
     'abi,' +
+    'customField,' +
     'cpuPlatform,' +
     'openGLESVersion,' +
     'marketName,' +
@@ -383,6 +384,7 @@ module.exports = function GroupsCtrl(
   , {name: 'Manufacturer', property: 'manufacturer'}
   , {name: 'SDK', property: 'sdk'}
   , {name: 'ABI', property: 'abi'}
+  , {name: 'Custom Field', property: 'customField'}
   , {name: 'CPU Platform', property: 'cpuPlatform'}
   , {name: 'OpenGL ES version', property: 'openGLESVersion'}
   , {name: 'Market name', property: 'marketName'}
@@ -401,6 +403,7 @@ module.exports = function GroupsCtrl(
     , {name: 'Manufacturer', selected: true, sort: 'none'}
     , {name: 'SDK', selected: true, sort: 'none'}
     , {name: 'ABI', selected: false, sort: 'none'}
+    , {name: 'Custom Field', selected: false, sort: 'none'}
     , {name: 'CPU Platform', selected: false, sort: 'none'}
     , {name: 'OpenGL ES version', selected: false, sort: 'none'}
     , {name: 'Market name', selected: true, sort: 'none'}

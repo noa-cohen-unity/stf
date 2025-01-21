@@ -86,7 +86,7 @@ module.exports = function DeviceColumnService($filter, gettext, SettingsService,
   , customField: DeviceModelCell({
       title: gettext('Custom Field')
     , value: function(device) {
-        return device.customField
+        return device.customField || ''
       }
     })
   , name: DeviceNameCell({

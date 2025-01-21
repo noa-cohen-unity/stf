@@ -22,6 +22,7 @@ module.exports = function DevicesCtrl(
     'manufacturer,' +
     'sdk,' +
     'abi,' +
+    'customField,' +
     'cpuPlatform,' +
     'openGLESVersion,' +
     'marketName,' +

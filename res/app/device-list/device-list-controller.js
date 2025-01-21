@@ -161,7 +161,7 @@ module.exports = function DeviceListCtrl(
     }
   , {
       name: 'customField'
-    , selected: false
+    , selected: true
     }
   ]
 
